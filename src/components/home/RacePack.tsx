@@ -8,8 +8,8 @@ import shirt5 from "../../assets/shirt-5km.png";
 import medal3 from "../../assets/medal-3km.png";
 import medal5 from "../../assets/medal-5km.png";
 
-import route3 from "../../assets/route-3km.png";
-import route5 from "../../assets/route-5km.png";
+import route3 from "../../assets/route-3km.jpeg";
+import route5 from "../../assets/route-5km.jpeg";
 
 export default function RacePack() {
   const [category, setCategory] = useState<"3KM" | "5KM">("3KM");
