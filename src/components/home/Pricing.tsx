@@ -16,7 +16,7 @@ export default function Pricing() {
           Choose Your Registration Tier
         </h2>
 
-        <div className="mt-12 overflow-x-auto rounded-3xl bg-white shadow-xl">
+        <div className="mx-auto mt-12 max-w-4xl overflow-x-auto rounded-3xl bg-white shadow-xl">
           <table className="w-full min-w-[560px] text-left">
 
             <thead className="bg-slate-950 text-white">
@@ -66,7 +66,7 @@ export default function Pricing() {
         </div>
 
         {/* SURPRISE PROMO */}
-        <div className="mt-8 rounded-3xl border-2 border-dashed border-cyan-500 bg-white px-6 py-7 shadow-lg">
+        <div className="mx-auto mt-8 max-w-2xl rounded-3xl border-2 border-dashed border-cyan-500 bg-white px-6 py-6 shadow-lg">
           <p className="text-sm font-black uppercase tracking-[.25em] text-cyan-700">
             Something Special Is Coming 👀
           </p>
