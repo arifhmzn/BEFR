@@ -23,19 +23,6 @@ export default function Pricing(){
               <tr>
                 <th className="p-5">Category</th>
 
-                {/* SOLD OUT HEADER */}
-                <th className="p-5">
-                  Super Early Bird
-                  <br />
-                  <span className="text-sm font-normal text-red-400 line-through">
-                    Until 6/9/2026
-                  </span>
-                  <br />
-                  <span className="text-xs font-black uppercase tracking-wider text-red-400">
-                    Sold Out
-                  </span>
-                </th>
-
                 <th className="p-5">
                   Early Bird
                   <br />
