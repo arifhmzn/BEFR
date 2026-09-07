@@ -1,9 +1,9 @@
 const prices = [
-  {category:"3KM", super:"RM28.90", early:"RM38.90", standard:"RM58.90"},
-  {category:"5KM", super:"RM38.90", early:"RM48.90", standard:"RM68.90"},
+  { category: "3KM", early: "RM38.90", standard: "RM58.90" },
+  { category: "5KM", early: "RM48.90", standard: "RM68.90" },
 ];
 
-export default function Pricing(){
+export default function Pricing() {
   return (
     <section id="pricing" className="bg-cyan-50 px-6 py-24">
       <div className="mx-auto max-w-6xl text-center">
@@ -17,7 +17,7 @@ export default function Pricing(){
         </h2>
 
         <div className="mt-12 overflow-x-auto rounded-3xl bg-white shadow-xl">
-          <table className="w-full min-w-[680px] text-left">
+          <table className="w-full min-w-[560px] text-left">
 
             <thead className="bg-slate-950 text-white">
               <tr>
@@ -27,7 +27,7 @@ export default function Pricing(){
                   Early Bird
                   <br />
                   <span className="text-sm font-normal text-cyan-300">
-                    7/9/2026-12/9/2026
+                    7/9/2026 – 12/9/2026
                   </span>
                 </th>
 
@@ -35,7 +35,7 @@ export default function Pricing(){
                   Standard
                   <br />
                   <span className="text-sm font-normal text-cyan-300">
-                    13/9/2026-16/9/2026
+                    13/9/2026 – 16/9/2026
                   </span>
                 </th>
               </tr>
@@ -51,19 +51,10 @@ export default function Pricing(){
                     {p.category}
                   </td>
 
-                  
-                      <span className="absolute whitespace-nowrap rounded-full bg-red-500 px-3 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md">
-                        Sold Out
-                      </span>
-                    </div>
-                  </td>
-
-                  {/* EARLY BIRD */}
                   <td className="p-5 text-xl font-bold">
                     {p.early}
                   </td>
 
-                  {/* STANDARD */}
                   <td className="p-5 text-xl font-bold">
                     {p.standard}
                   </td>
@@ -72,6 +63,21 @@ export default function Pricing(){
             </tbody>
 
           </table>
+        </div>
+
+        {/* SURPRISE PROMO */}
+        <div className="mt-8 rounded-3xl border-2 border-dashed border-cyan-500 bg-white px-6 py-7 shadow-lg">
+          <p className="text-sm font-black uppercase tracking-[.25em] text-cyan-700">
+            Something Special Is Coming 👀
+          </p>
+
+          <h3 className="mt-2 text-2xl font-black text-slate-950">
+            Surprise Promo — 9 September 2026
+          </h3>
+
+          <p className="mt-2 text-slate-600">
+            Stay tuned. You don't want to miss this!
+          </p>
         </div>
 
         <p className="mt-5 text-sm text-slate-600">
