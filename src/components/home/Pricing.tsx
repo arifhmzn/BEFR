@@ -51,13 +51,7 @@ export default function Pricing(){
                     {p.category}
                   </td>
 
-                  {/* SOLD OUT PRICE */}
-                  <td className="p-5">
-                    <div className="relative inline-flex items-center justify-center">
-                      <span className="text-xl font-bold text-slate-400 blur-[2px] select-none">
-                        {p.super}
-                      </span>
-
+                  
                       <span className="absolute whitespace-nowrap rounded-full bg-red-500 px-3 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md">
                         Sold Out
                       </span>
