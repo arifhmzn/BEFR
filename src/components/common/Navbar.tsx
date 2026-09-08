@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
-const GOOGLE_FORM_URL = "https://forms.gle/YvHj9yBKhsg2uUqk6";
+const GOOGLE_FORM_URL = "https://forms.gle/jFY9zv5gsHd8jj3n6";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
