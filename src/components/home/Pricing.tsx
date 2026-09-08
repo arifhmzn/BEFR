@@ -1,3 +1,5 @@
+import earlybird from "../../assets/early bird.jpeg";
+
 const prices = [
   { category: "3KM", early: "RM38.90", standard: "RM58.90" },
   { category: "5KM", early: "RM48.90", standard: "RM68.90" },
@@ -65,24 +67,21 @@ export default function Pricing() {
           </table>
         </div>
 
-        {/* SURPRISE PROMO */}
-        <div className="mx-auto mt-8 max-w-2xl rounded-3xl border-2 border-dashed border-cyan-500 bg-white px-6 py-6 shadow-lg">
-          <p className="text-sm font-black uppercase tracking-[.25em] text-cyan-700">
-            Something Special Is Coming 👀
-          </p>
+        {/* PROMO TRIO 9.9 */}
+<a
+  href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+  className="mx-auto mt-8 block max-w-2xl overflow-hidden rounded-3xl shadow-lg transition hover:scale-[1.02]"
+>
+  <img
+    src={earlybird}
+    alt="Promo Trio 9.9"
+    className="w-full h-auto object-cover"
+  />
+</a>
 
-          <h3 className="mt-2 text-2xl font-black text-slate-950">
-            Surprise Promo — 9 September 2026
-          </h3>
-
-          <p className="mt-2 text-slate-600">
-            Stay tuned. You don't want to miss this!
-          </p>
-        </div>
-
-        <p className="mt-5 text-sm text-slate-600">
-          Prices are subject to the applicable registration period and slot availability.
-        </p>
+<p className="mt-5 text-sm text-slate-600">
+  Prices are subject to the applicable registration period and slot availability.
+</p>
 
       </div>
     </section>
