@@ -1,15 +1,12 @@
-import earlybird from "../../assets/early bird.jpeg";
 
-const prices = [
-  { category: "3KM", early: "RM38.90", standard: "RM58.90" },
-  { category: "5KM", early: "RM48.90", standard: "RM68.90" },
-];
+import earlybird from "../../assets/early bird.jpeg";
 
 export default function Pricing() {
   return (
     <section id="pricing" className="bg-cyan-50 px-6 py-24">
       <div className="mx-auto max-w-6xl text-center">
 
+        {/* SECTION TITLE */}
         <p className="font-bold uppercase tracking-[.3em] text-cyan-700">
           Registration Fees
         </p>
@@ -18,70 +15,33 @@ export default function Pricing() {
           Choose Your Registration Tier
         </h2>
 
-        <div className="mx-auto mt-12 max-w-4xl overflow-x-auto rounded-3xl bg-white shadow-xl">
-          <table className="w-full min-w-[560px] text-left">
+        {/* SINGLE PRICING POSTER */}
+        <a
+          href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto mt-12 block max-w-4xl overflow-hidden rounded-3xl shadow-xl transition duration-300 hover:scale-[1.02] hover:shadow-2xl"
+        >
+          <img
+            src={earlybird}
+            alt="Blue Economy Fun Run Early Bird Registration Promo"
+            className="h-auto w-full object-cover"
+          />
+        </a>
 
-            <thead className="bg-slate-950 text-white">
-              <tr>
-                <th className="p-5">Category</th>
+        {/* REGISTER BUTTON */}
+        <a
+          href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto mt-8 inline-block rounded-full bg-cyan-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-cyan-700"
+        >
+          REGISTER NOW →
+        </a>
 
-                <th className="p-5">
-                  Early Bird
-                  <br />
-                  <span className="text-sm font-normal text-cyan-300">
-                    7/9/2026 – 12/9/2026
-                  </span>
-                </th>
-
-                <th className="p-5">
-                  Standard
-                  <br />
-                  <span className="text-sm font-normal text-cyan-300">
-                    13/9/2026 – 16/9/2026
-                  </span>
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {prices.map((p, i) => (
-                <tr
-                  key={p.category}
-                  className={i % 2 ? "bg-slate-50" : "bg-white"}
-                >
-                  <td className="p-5 text-2xl font-black text-cyan-700">
-                    {p.category}
-                  </td>
-
-                  <td className="p-5 text-xl font-bold">
-                    {p.early}
-                  </td>
-
-                  <td className="p-5 text-xl font-bold">
-                    {p.standard}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-
-          </table>
-        </div>
-
-        {/* PROMO TRIO 9.9 */}
-<a
-  href="https://forms.gle/YvHj9yBKhsg2uUqk6"
-  className="mx-auto mt-8 block max-w-2xl overflow-hidden rounded-3xl shadow-lg transition hover:scale-[1.02]"
->
-  <img
-    src={earlybird}
-    alt="Promo Trio 9.9"
-    className="w-full h-auto object-cover"
-  />
-</a>
-
-<p className="mt-5 text-sm text-slate-600">
-  Prices are subject to the applicable registration period and slot availability.
-</p>
+        <p className="mt-5 text-sm text-slate-600">
+          Prices are subject to slot availability.
+        </p>
 
       </div>
     </section>
