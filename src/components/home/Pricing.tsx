@@ -31,7 +31,7 @@ export default function Pricing() {
 
         {/* REGISTER BUTTON */}
         <a
-          href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+          href="https://forms.gle/vbD9gfzk3QQWtyxp8"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-auto mt-8 inline-block rounded-full bg-cyan-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-cyan-700"
