@@ -1,5 +1,5 @@
-
 import earlybird from "../../assets/early bird.jpeg";
+import medalbib from "../../assets/MEDALBIB.jpg";
 
 export default function Pricing() {
   return (
@@ -15,35 +15,35 @@ export default function Pricing() {
           Choose Your Registration Tier
         </h2>
 
-        {/* SINGLE PRICING POSTER */}
-        <a
-          href="https://forms.gle/YvHj9yBKhsg2uUqk6"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mx-auto mt-12 block max-w-4xl overflow-hidden rounded-3xl shadow-xl transition duration-300 hover:scale-[1.02] hover:shadow-2xl"
-        >
-          <img
-            src={earlybird}
-            alt="Blue Economy Fun Run Early Bird Registration Promo"
-            className="h-auto w-full object-cover"
-          />
-        </a>
+       {/* PRICING POSTERS - SIDE BY SIDE */}
+<div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
 
-        {/* REGISTER BUTTON */}
-        <a
-          href="https://forms.gle/vbD9gfzk3QQWtyxp8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mx-auto mt-8 inline-block rounded-full bg-cyan-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-cyan-700"
-        >
-          REGISTER NOW →
-        </a>
+  {/* EARLY BIRD POSTER */}
+  <a
+    href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="overflow-hidden rounded-3xl shadow-xl transition duration-300 hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <img
+      src={earlybird}
+      alt="Blue Economy Fun Run Early Bird Registration Promo"
+      className="h-full w-full object-cover"
+    />
+  </a>
 
-        <p className="mt-5 text-sm text-slate-600">
-          Prices are subject to slot availability.
-        </p>
+  {/* MEDAL + BIB POSTER */}
+  <a
+    href="https://forms.gle/YvHj9yUqk6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="overflow-hidden rounded-3xl shadow-xl transition duration-300 hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <img
+      src={medalbib}
+      alt="Blue Economy Fun Run Medal and Race Bib"
+      className="h-full w-full object-cover"
+    />
+  </a>
 
-      </div>
-    </section>
-  );
-}
+</div>
