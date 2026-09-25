@@ -20,7 +20,7 @@ export default function Pricing() {
 
           {/* EARLY BIRD POSTER */}
           <a
-            href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+            href="https://forms.gle/xMo8VvgMRR5uBxC1A"
             target="_blank"
             rel="noopener noreferrer"
             className="block overflow-hidden rounded-3xl shadow-xl transition duration-300 hover:scale-[1.02] hover:shadow-2xl"
@@ -34,7 +34,7 @@ export default function Pricing() {
 
           {/* MEDAL + BIB POSTER */}
           <a
-            href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+            href="https://forms.gle/xMo8VvgMRR5uBxC1A"
             target="_blank"
             rel="noopener noreferrer"
             className="block overflow-hidden rounded-3xl shadow-xl transition duration-300 hover:scale-[1.02] hover:shadow-2xl"
@@ -50,7 +50,7 @@ export default function Pricing() {
 
         {/* REGISTER BUTTON */}
         <a
-          href="https://forms.gle/YvHj9yBKhsg2uUqk6"
+          href="https://forms.gle/xMo8VvgMRR5uBxC1A"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-auto mt-8 inline-block rounded-full bg-cyan-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-cyan-700"
